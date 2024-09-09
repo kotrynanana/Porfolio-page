@@ -9,3 +9,94 @@ body {
     color: white;
     font-family: 'Inter', sans-serif;
 }
+
+/* NAVIGATION DESIGN */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+}
+
+nav div a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+/* HEADER SECTION */
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10rem ;
+}
+
+header h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header .info {
+    padding-bottom: 200px;
+}
+
+header .bio {
+    width: 400px;
+}
+
+header .bio p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.bio button {
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background: none;
+    color: white;
+    border: #FFFFFF 1px solid;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 32px;
+    border-radius: 20px;
+}
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+}
