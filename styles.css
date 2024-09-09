@@ -111,18 +111,28 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 5rem 10rem;
+    padding: 10rem 10rem 15rem;
+}
+
+#about a {
+    text-decoration: none;
+    color: white;
 }
 
 #about h2 {
     font-size: 72px;
     font-weight: 900;
     width: 675px;
+    margin-bottom: 20px;
 }
 
 #about .title {
     font-size: 18px;
     font-weight: 300;
+}
+
+#about .title p {
+    margin-bottom: 30px;
 }
 
 .experiences p {
@@ -137,6 +147,8 @@ hr {
     flex-wrap: wrap;
     gap: 10px;
     width: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .skills .skill {
@@ -146,4 +158,16 @@ hr {
     background-color: #79747E;
     padding: 10px 24px;
     border-radius: 100px;
+}
+
+.resume {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.resume p{
+    font-weight: 900;
+    margin: 0;
 }
