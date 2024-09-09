@@ -66,6 +66,19 @@ header .info {
     padding-bottom: 200px;
 }
 
+header .info-card {
+    display: flex;
+    align-items: center;
+}
+
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #4DFF5E;
+    border-radius: 50%;
+}
+
 header .bio {
     width: 400px;
 }
@@ -97,6 +110,40 @@ hr {
 #about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     padding: 5rem 10rem;
+}
+
+#about h2 {
+    font-size: 72px;
+    font-weight: 900;
+    width: 675px;
+}
+
+#about .title {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.experiences p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 1rem;
+    width: 551px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 600px;
+}
+
+.skills .skill {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: #79747E;
+    padding: 10px 24px;
+    border-radius: 100px;
 }
