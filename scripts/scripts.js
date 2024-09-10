@@ -58,7 +58,7 @@ document.getElementById('nav-works').addEventListener('click', function(event) {
   event.preventDefault();
   const targetId = this.getAttribute('href').substring(1);
   const targetElement = document.getElementById(targetId);
-  const offset = 100; // Adjust this value as needed
+  const offset = 80;
   const elementPosition = targetElement.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -72,7 +72,7 @@ document.querySelector('a[href="#header"]').addEventListener('click', function(e
   event.preventDefault();
   const targetId = this.getAttribute('href').substring(1);
   const targetElement = document.getElementById(targetId);
-  const offset = 100; // Adjust this value as needed
+  const offset = 150; 
   const elementPosition = targetElement.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.pageYOffset - offset;
 
