@@ -1,4 +1,7 @@
 let acc = document.getElementsByClassName("accordion");
+let nameInput = document.getElementById("name");
+let emailInput = document.getElementById("email");
+let messageInput = document.getElementById("message");
 let i;
 
 for (i = 0; i < acc.length; i++) {
@@ -31,6 +34,10 @@ window.onload = function() {
       emailjs.sendForm('service_3k9xv78', 'template_rc49krr', this)
           .then(() => {
               console.log('SUCCESS!');
+              nameInput.value = '';
+              emailInput.value = '';
+              messageInput.value = '';
+              alert('Your message has been sent successfully');
           }, (error) => {
               console.log('FAILED...', error);
           });
