@@ -53,3 +53,31 @@ window.addEventListener('scroll', function() {
       navbar.classList.remove('scrolled');
   }
 });
+
+document.getElementById('nav-works').addEventListener('click', function(event) {
+  event.preventDefault();
+  const targetId = this.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+  const offset = 100; // Adjust this value as needed
+  const elementPosition = targetElement.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+  window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+  });
+});
+
+document.querySelector('a[href="#header"]').addEventListener('click', function(event) {
+  event.preventDefault();
+  const targetId = this.getAttribute('href').substring(1);
+  const targetElement = document.getElementById(targetId);
+  const offset = 100; // Adjust this value as needed
+  const elementPosition = targetElement.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+  window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+  });
+});
