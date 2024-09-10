@@ -114,6 +114,18 @@ header .info-card {
     align-items: center;
 }
 
+.info-card a {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    color: var(--primary-color);
+}
+
 header .info-card:not(:last-child) {
     margin-bottom: 20px;
 }
