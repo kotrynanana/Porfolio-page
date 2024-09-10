@@ -72,7 +72,7 @@ document.querySelector('a[href="#header"]').addEventListener('click', function(e
   event.preventDefault();
   const targetId = this.getAttribute('href').substring(1);
   const targetElement = document.getElementById(targetId);
-  const offset = 150; 
+  const offset = 200; 
   const elementPosition = targetElement.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.pageYOffset - offset;
 

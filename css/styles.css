@@ -199,20 +199,20 @@ hr {
 /* ABOUT SECTION */
 
 #about {
-    padding: 10rem 10rem 15rem;
+    padding: 10rem 10rem 10rem;
 }
 
 #about .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 40px;
 }
 
 
 #about h2 {
     font-size: 72px;
     font-weight: 900;
-    width: 675px;
     margin-bottom: 20px;
 }
 
@@ -235,18 +235,20 @@ hr {
     color: var(--primary-color);
 }
 
+.experiences {
+    width: 45%;
+}
+
 .experiences p {
     font-size: 18px;
     font-weight: 300;
     margin-top: 1rem;
-    width: 551px;
 }
 
 .skills {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 600px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
