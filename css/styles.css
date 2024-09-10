@@ -1,3 +1,12 @@
+:root {
+    --primary-color: #F1D302;
+    --secondary-color: #232323;
+    --tertiary-color: #333;
+    --quaternary-color: #4DFF5E;
+    --quinary-color: #79747E;
+    --senary-color: #818080;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #232323;
+    background-color: var(--secondary-color);
     color: white;
     font-family: 'Inter', sans-serif;
 }
@@ -23,7 +32,7 @@ nav {
     padding: 2rem 10rem;
     position: sticky;
     top: 0;
-    background-color: #333;
+    background-color: var(--tertiary-color);
 }
 
 .logo {
@@ -49,6 +58,10 @@ nav div a {
     cursor: pointer;
 }
 
+nav div a:hover {
+    color: var(--primary-color);
+}
+
 nav div a p {
     margin: 0;
     padding: 0;
@@ -64,6 +77,10 @@ nav ul li a {
     text-decoration: none;
     margin: 0 1rem;
     cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
 }
 
 /* HEADER SECTION */
@@ -108,7 +125,7 @@ header .info-card:not(:last-child) {
 .circle {
     width: 12px;
     height: 12px;
-    background-color: #4DFF5E;
+    background-color: var(--quaternary-color);
     border-radius: 50%;
     margin-right: 15px;
     margin-left: 2px;
@@ -137,7 +154,7 @@ header .bio p {
   }
   
   .button:hover {
-    background-color: #838383;
+    background-color: var(--quinary-color);
   }
 
 hr {
@@ -154,10 +171,6 @@ hr {
     padding: 10rem 10rem 15rem;
 }
 
-#about a {
-    text-decoration: none;
-    color: white;
-}
 
 #about h2 {
     font-size: 72px;
@@ -177,6 +190,12 @@ hr {
 
 .socials a {
     font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.socials a i:hover {
+    color: var(--primary-color);
 }
 
 .experiences p {
@@ -199,7 +218,7 @@ hr {
     font-size: 14px;
     font-weight: 700;
     color: white;
-    background-color: #79747E;
+    background-color: var(--quinary-color);
     padding: 10px 24px;
     border-radius: 100px;
 }
@@ -209,11 +228,18 @@ hr {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-}
-
-.resume p{
     font-weight: 900;
     margin: 0;
+}
+
+
+a.resume {
+    text-decoration: none;
+    color: white;
+}
+
+a.resume:hover{
+    color: var(--primary-color);
 }
 
 /* WORKS SECTION */
@@ -237,7 +263,7 @@ hr {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #232323;
+    background-color: var(--secondary-color);
     color: white;
     font-size: 56px;
     font-weight: 900;
@@ -253,7 +279,7 @@ hr {
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #818080;
+    background-color: var(--senary-color);
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -307,7 +333,7 @@ input {
 
 input:hover {
   background: white;
-  color: #232323;
+  color: var(--secondary-color);
 }
 
 textarea {
@@ -333,7 +359,7 @@ textarea {
 
 textarea:hover {
   background: white;
-  color: #232323;
+  color: var(--secondary-color);
 }
 
 #submit {
@@ -351,7 +377,7 @@ font-family: 'Inter', sans-serif;
 }
 
 #submit:hover {
-  color: #232323;
+  color:  var(--secondary-color);
 }
 
   /* FOOTER SECTION */
