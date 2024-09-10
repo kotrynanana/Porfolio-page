@@ -22,11 +22,32 @@ nav {
     background-color: #333;
 }
 
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.seperator {
+    background-color: white;
+    width: 2px;
+    height: 26px;
+    margin-right: 20px;
+}
+
 nav div a {
     display: flex;
     align-items: center;
     color: white;
     text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+nav div a p {
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -38,6 +59,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     margin: 0 1rem;
+    cursor: pointer;
 }
 
 /* HEADER SECTION */
@@ -71,12 +93,21 @@ header .info-card {
     align-items: center;
 }
 
+header .info-card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-right: 10px;
+}
 
 .circle {
     width: 12px;
     height: 12px;
     background-color: #4DFF5E;
     border-radius: 50%;
+    margin-right: 15px;
+    margin-left: 2px;
 }
 
 header .bio {
@@ -88,17 +119,22 @@ header .bio p {
     font-weight: 300;
 }
 
-.bio button {
-    padding: 1rem 2rem;
-    margin-top: 2rem;
-    background: none;
-    color: white;
-    border: #FFFFFF 1px solid;
+.button {
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 36px;
     cursor: pointer;
-    font-weight: bold;
-    font-size: 32px;
-    border-radius: 20px;
-}
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    border: #fff 2px solid;
+    margin-top: 40px;
+  }
+  
+  .button:hover {
+    background-color: #838383;
+  }
 
 hr {
     margin: 0;
@@ -313,4 +349,16 @@ textarea:hover {
 
 #submit:hover {
   color: #232323;
+}
+
+  /* FOOTER SECTION */
+
+footer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
 }

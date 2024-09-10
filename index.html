@@ -8,21 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <nav>
         <div>
             <a href="#header">
             <p class="logo">KoBra</p>
-            <img src="" alt="">
+            <div class="seperator"></div>
             <p>Design & Development by Kotryna Brazaityte</p>
             </a>
         </div>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </nav>
     <header id="header">
@@ -33,21 +32,21 @@
         <div class="header-info">
             <div class="info">
                 <div class="info-card">
-                    <i class="ph-fill ph-map-pin"></i>
+                    <i class="ph-fill ph-map-pin icon"></i>
                     <p>Vilnius, Lithuania / Remote</p>
                 </div>
                 <div class="info-card">
-                    <div class="circle"></div>
+                    <div class="circle icon"></div>
                     <p>open for work</p>
                 </div>
                 <div class="info-card">
-                    <i class="ph-fill ph-envelope"></i>
+                    <i class="ph-fill ph-envelope icon"></i>
                     <p>kotryn.brazaityte@gmail.com</p>
                 </div>
             </div>
             <div class="bio">
                 <p>Greetings, I'm Kotryna Brazaityte. I blend the art of design with the craft of code to create thoughtful brands and engaging digital experiences. Focused on minimalism and efficiency, I'm here to build solutions that make a difference, one project at a time.</p>
-                <button>CONTACT ME</button>
+                <a href="#contact" class="button">CONTACT ME</a>
             </div>
         </div>
     </header>
@@ -128,9 +127,9 @@
         <h2>Contact</h2>
         <p>Let's turn your ideas into pixels and code.</p>
         <form id="contact-form" class="topBefore">
-            <input id="name" type="text" name="from_name" placeholder="NAME">
-            <input id="email" type="text" name="from_email" placeholder="E-MAIL">
-            <textarea id="message" type="text" name="message" placeholder="MESSAGE"></textarea>
+            <input id="name" type="text" name="from_name" placeholder="NAME" required>
+            <input id="email" type="text" name="from_email" placeholder="E-MAIL" required>
+            <textarea id="message" type="text" name="message" placeholder="MESSAGE" required></textarea>
             <input id="submit" type="submit" value="LET'S GO!">
   </form>
     </section>
@@ -141,29 +140,8 @@
             <p>kotryn.brazaityte@gmail.com</p>
         </div>
     </footer>
-    <script src="/scripts.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init({
-              publicKey: "cV3XHy135C6HSritr",
-            });
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_3k9xv78', 'template_rc49krr', this)
-                    .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="/scripts.js"></script>
 </body>
 </html>

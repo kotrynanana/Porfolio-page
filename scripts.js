@@ -17,3 +17,22 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+(function() {
+  // https://dashboard.emailjs.com/admin/account
+  emailjs.init({
+    publicKey: "cV3XHy135C6HSritr",
+  });
+})();
+
+window.onload = function() {
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      // these IDs from the previous steps
+      emailjs.sendForm('service_3k9xv78', 'template_rc49krr', this)
+          .then(() => {
+              console.log('SUCCESS!');
+          }, (error) => {
+              console.log('FAILED...', error);
+          });
+  });
+}
