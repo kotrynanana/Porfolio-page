@@ -13,6 +13,17 @@ header.works {
     padding: 0;
 }
 
+p.date {
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    color: var(--senary-color);
+    margin-bottom: 50px;
+    font-weight: 900;
+    margin-top: 5px;
+    padding: 0;
+}
+
 .m-klubas-heading {
     margin-top: 50px;
     width: 100%;
@@ -29,7 +40,7 @@ header.works {
     text-align: center;
     text-transform: uppercase;
     color: var(--senary-color);
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .works h2 {
