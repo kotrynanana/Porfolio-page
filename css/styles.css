@@ -28,6 +28,8 @@ body {
     margin: 0 auto;
 }
 
+
+
 /* NAVIGATION DESIGN */
 
 #nav {
@@ -38,6 +40,7 @@ body {
     transition: background-color 0.3s ease;
     transition: backdrop-filter 0.3s ease;
     border-bottom: white 2px solid;
+    z-index: 1000;
 }
 
 #nav.scrolled {
@@ -297,6 +300,13 @@ a.resume:hover {
     text-align: center;
     font-weight: 900;
     margin-top: 80px;
+    margin-bottom: 0;
+}
+
+#works .subheading {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
     margin-bottom: 100px;
 }
 
@@ -320,16 +330,92 @@ a.resume:hover {
 .active,
 .accordion:hover {
     background-color: var(--senary-color);
+    cursor: pointer;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-    width: 80%;
-    padding: 0 18px;
+    width: 100%;
+    padding: 0;
     background-color: none;
     display: none;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+}
+
+
+.panel a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.panel a:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.panel .work {
+    padding: 20px 120px;
+    border: var(--senary-color) 2px solid;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+}
+
+.panel .work:hover {
+    background-color: var(--senary-color);
+    cursor: pointer;
+}
+
+.panel .work img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.panel .work h5 {
+    font-size: 48px;
+    line-height: 50px;
+    margin-bottom: 5px;
+}
+
+.panel .subtitle {
+    font-size: 16px;
+}
+
+.panel .description {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.panel .date {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.panel .link {
+    font-size: 12px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+}
+
+.panel .work h5:hover,
+.panel p.subtitle:hover,
+.panel p.description:hover,
+.panel p.date:hover,
+.panel .link:hover {
+   cursor: pointer;
 }
 
 /* CONTACT SECTION */

@@ -21,30 +21,6 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-(function () {
-    // https://dashboard.emailjs.com/admin/account
-    emailjs.init({
-        publicKey: "cV3XHy135C6HSritr",
-    });
-})();
-
-window.onload = function () {
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        // these IDs from the previous steps
-        emailjs.sendForm('service_3k9xv78', 'template_rc49krr', this)
-            .then(() => {
-                console.log('SUCCESS!');
-                nameInput.value = '';
-                emailInput.value = '';
-                messageInput.value = '';
-                alert('Your message has been sent successfully');
-            }, (error) => {
-                console.log('FAILED...', error);
-            });
-    });
-}
-
 
 window.addEventListener('scroll', function () {
     let navbar = document.getElementById('nav');
@@ -55,36 +31,9 @@ window.addEventListener('scroll', function () {
     }
 });
 
-document.getElementById('nav-works').addEventListener('click', function (event) {
-    event.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-    const offset = 80;
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-    window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-    });
-});
-
-document.querySelector('a[href="#header"]').addEventListener('click', function (event) {
-    event.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-    const offset = 200;
-    const elementPosition = targetElement.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-    window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-    });
-});
 
 document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('modal');
+    const modal = document.querySelector('.modal');
     const modalImg = document.getElementById('modalImage');
     const closeBtn = document.querySelector('.close');
     const prevBtn = document.querySelector('.prev');
@@ -94,11 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Get all images in the gallery
     const images = document.querySelectorAll('.ib-brandbook-images img');
 
-    console.log(images);
-
     images.forEach((img, index) => {
         img.addEventListener('click', () => {
-            console.log("clicked");
             modal.style.display = 'block';
             modalImg.src = img.src;
             currentIndex = index;
@@ -126,6 +72,19 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
+        }
+    });
+
+    // Keyboard navigation
+    window.addEventListener('keydown', (event) => {
+        if (modal.style.display === 'block') {
+            if (event.key === 'ArrowLeft') {
+                prevBtn.click();
+            } else if (event.key === 'ArrowRight') {
+                nextBtn.click();
+            } else if (event.key === 'Escape') {
+                closeBtn.click();
+            }
         }
     });
 });
