@@ -148,6 +148,9 @@ img.half {
 
 .ib-background {
     background-image: url(../assets/IB/ib-background.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
 }
 
 .works h1.ib {

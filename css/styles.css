@@ -517,3 +517,8 @@ footer p {
     text-align: center;
     font-size: 12px;
 }
+
+
+.panel .work img.ib-logo {
+    width: 200px;
+}
