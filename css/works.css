@@ -276,3 +276,118 @@ div.ib-list ul li p:not(.list-title) {
     width: 90%;
     margin: 0 auto;
 }
+
+.gif-section {
+    background: white;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.gif-section p:first-of-type {
+    margin-bottom: 20px;
+}
+
+/* PETMADE PAGE */
+
+.petmade {
+    background-color: #FEF2EC;
+}
+
+.petmade p, .petmade a, .petmade h2, .petmade h1 {
+    color: var(--secondary-color);
+}
+
+.petmade #nav.scrolled {
+    background: rgba(255, 255, 255, 0.484);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.petmade #nav {
+    border-bottom: var(--secondary-color) 2px solid;
+}
+
+.petmade .seperator {
+    background-color: var(--secondary-color);
+}
+
+.petmade nav div a:hover {
+    color: var(--primary-color);
+}
+
+.gif-section .container {
+    margin: -20px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gif-section .container img {
+    width: 20%;
+    object-fit: cover; 
+}
+
+.animation-text p {
+    color: var(--secondary-color);
+}
+
+.petmade .process {
+    background-color: transparent;
+}
+
+.petmade .process .image img {
+    width: 70%;
+}
+
+.research {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.research .description {
+    width: calc((100% - 50px) / 2);
+}
+
+.research .description p:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.research .image {
+    width: calc((100% - 50px) / 2);
+}
+
+
+.research .image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.initial {
+    background: white;
+    padding: 40px 0px;
+    margin-top: 80px;
+}
+
+.brandbook-example p {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 50px;
+}
+
+.brandbook-example h2 {
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.initial h2 {
+    margin-top: 0;
+}
+
+hr.color {
+    margin-top: 80px;
+}
