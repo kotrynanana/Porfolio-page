@@ -391,3 +391,29 @@ div.ib-list ul li p:not(.list-title) {
 hr.color {
     margin-top: 80px;
 }
+
+.animation-text h3 {
+    color: var(--secondary-color);
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+header .petmade {
+    display: flex;
+    flex-direction: column;
+}
+
+header .petmade img {
+    width: 40%;
+    margin: 80px auto 0;
+}
+
+
+header .petmade h4 {
+    margin-top: 0;
+}
+
+.petmade .ib-brandbook-images img:hover {
+    box-shadow: 0 0 0 3px var(--primary-color);
+}

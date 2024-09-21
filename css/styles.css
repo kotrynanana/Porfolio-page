@@ -522,3 +522,9 @@ footer p {
 .panel .work img.ib-logo {
     width: 200px;
 }
+
+
+.panel .work img.petmade-logo {
+    width: 290px;
+    margin-right: 0;
+}
