@@ -270,6 +270,7 @@ div.ib-list ul li p:not(.list-title) {
 .prev:hover,
 .next:hover {
     background-color: rgba(0,0,0,0.8);
+    cursor: pointer;
 }
 
 .ib-process .image img {
@@ -316,6 +317,7 @@ div.ib-list ul li p:not(.list-title) {
 
 .petmade nav div a:hover {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .gif-section .container {
@@ -416,6 +418,7 @@ header .petmade h4 {
 
 .petmade .ib-brandbook-images img:hover {
     box-shadow: 0 0 0 3px var(--primary-color);
+    cursor: pointer;
 }
 
 /* IB WEBSITE PAGE */
@@ -432,6 +435,7 @@ a.linkas  {
 
 a.linkas:hover {
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .about.website {
