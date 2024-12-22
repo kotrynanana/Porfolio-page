@@ -528,3 +528,30 @@ footer p {
     width: 290px;
     margin-right: 0;
 }
+
+.arbatine li {
+    margin-bottom: 15px;
+}
+
+.panel .work img.arbatine-logo {
+    width: 300px;
+    object-fit: cover;
+}
+
+a.linkas  {
+    text-align: center;
+    color: rgb(227, 227, 227);
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+a.linkas:hover {
+    color: var(--primary-color);
+}
+
+.about.website {
+    margin-bottom: 100px;
+}
