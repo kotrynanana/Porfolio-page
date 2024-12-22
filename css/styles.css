@@ -555,3 +555,20 @@ a.linkas:hover {
 .about.website {
     margin-bottom: 100px;
 }
+
+img.instagram-stories {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.first-page .container h2 {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.first-page .container p {
+    margin-bottom: 50px;
+}
+
