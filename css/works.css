@@ -417,3 +417,85 @@ header .petmade h4 {
 .petmade .ib-brandbook-images img:hover {
     box-shadow: 0 0 0 3px var(--primary-color);
 }
+
+/* IB WEBSITE PAGE */
+
+a.linkas  {
+    text-align: center;
+    color: rgb(227, 227, 227);
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+a.linkas:hover {
+    color: var(--primary-color);
+}
+
+.about.website {
+    margin-bottom: 100px;
+}
+
+img.instagram-stories {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.first-page .container h2 {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.first-page .container p {
+    margin-bottom: 50px;
+}
+
+.heatmap h2 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.heatmap p.subtext {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heatmap p.heatmap-text {
+    margin-bottom: 40px;
+}
+
+.heatmap .data-images {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heatmap {
+    background-color: var(--senary-color);
+    padding-top: 15px;
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.responsive {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.responsive img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.responsive h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
