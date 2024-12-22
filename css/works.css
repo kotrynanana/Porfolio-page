@@ -503,3 +503,30 @@ img.instagram-stories {
     font-size: 32px;
     margin-bottom: 15px;
 }
+
+/* IB SOCIAL PAGE */
+
+header img.ib-social {
+    width: 100%;
+    object-fit: cover;
+}
+
+.social-media header h1.ib {
+    margin-top: 50px;
+}
+
+.social-media header h4 {
+    margin-top: 10px;
+}
+
+.social-media .about p {
+    margin-bottom: 80px;
+}
+
+.social-media .brandbook-example h2 {
+    margin-bottom: 40px;
+}
+
+.social-media footer {
+    margin-top: 80px;
+}
