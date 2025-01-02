@@ -509,6 +509,7 @@ img.instagram-stories {
 header img.ib-social {
     width: 100%;
     object-fit: cover;
+    height: 740px;
 }
 
 .social-media header h1.ib {
@@ -530,3 +531,5 @@ header img.ib-social {
 .social-media footer {
     margin-top: 80px;
 }
+
+/* IB Marketing media PAGE */
