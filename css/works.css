@@ -534,13 +534,39 @@ header img.ib-social {
 
 /* IB Marketing media PAGE */
 
+.marketing-headline {
+    max-width: 1320px;
+    margin: 100px auto 0;
+}
+
+.marketing-headline h1 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.marketing-headline h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 .video-ads {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 70px;
 }
 
 .video-ads iframe {
     width: calc((100% / 3) - 20px);
     height: 236px;
+}
+
+.brandbook-example h2.ad-subheadlines {
+    font-size: 54px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.first-line {
+    margin-top: 50px;
 }
