@@ -533,3 +533,14 @@ header img.ib-social {
 }
 
 /* IB Marketing media PAGE */
+
+.video-ads {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-ads iframe {
+    width: calc((100% / 3) - 20px);
+    height: 236px;
+}
