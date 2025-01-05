@@ -570,3 +570,15 @@ header img.ib-social {
 .first-line {
     margin-top: 50px;
 }
+
+.video-shorts {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.video-shorts iframe {
+    width: calc((100% / 7) - 5px);
+    height: 320px;
+}
