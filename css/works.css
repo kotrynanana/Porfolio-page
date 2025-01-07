@@ -582,3 +582,147 @@ header img.ib-social {
     width: calc((100% / 7) - 5px);
     height: 320px;
 }
+
+/* Laume maume page */
+
+.laume-heading {
+    width: 40%;
+    padding: 20px;
+    
+}
+
+.laume-h2 {
+    text-align: center;
+}
+
+.laume-first-screen {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.laume-section h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.laume-section h3 {
+    text-align: center;
+    color: #818080;
+    margin: 0 auto 20px;
+}
+
+.laume-section p {
+    margin-bottom: 40px;
+}
+
+.laume-section {
+    margin-top: 80px;
+}
+
+.audience {
+    margin-top: 40px;
+}
+
+.audience h2 {
+    margin-bottom: 10px;
+}
+
+.questions {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.questions img {
+    width: 40%;
+}
+
+.questions h3 {
+    font-size: 48px;
+    margin-bottom: 0;
+    color: #FEF2EC;
+    text-align: left;
+}
+
+.questions h5 {
+    color: #818080;
+    font-size: 1.17em;
+    margin-bottom: 15px;
+}
+
+hr.laume {
+    margin-top: 80px;
+}
+
+.sitemap {
+    display: flex;
+    align-items: center ;
+}
+
+.sitemap img {
+    width: 35%;
+}
+
+.sitemap h3 {
+    font-size: 48px;
+    margin-bottom: 0;
+    color: #FEF2EC;
+    text-align: left;
+}
+
+.sitemap h5 {
+    color: #818080;
+    font-size: 1.17em;
+    margin-bottom: 15px;
+}
+
+.low-fidelity h5 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.low-fidelity p {
+    text-align: center;
+}
+
+.brand-section {
+    margin-bottom: 80px;
+}
+
+.brand-section p {
+    text-align: center;
+}
+
+.high-fidelity p {
+    text-align: center;
+}
+
+.high-fidelity {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.high-fidelity img {
+    margin: 0 auto;
+    width: 70%;
+    display: block;
+}
+
+.final-design h2 {
+    margin-bottom: 10px;
+}
+
+.final-videos {
+    display: flex;
+    gap: 15px;
+}
+
+.final-design iframe {
+    width: calc((100% / 2) - 15px);
+    height: 365px;
+}
