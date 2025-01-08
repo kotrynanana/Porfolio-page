@@ -26,6 +26,7 @@ body {
 .container {
     max-width: 1320px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 
@@ -172,7 +173,7 @@ header .info-card:not(:last-child) {
 }
 
 header .bio {
-    width: 400px;
+    max-width: 400px;
 }
 
 header .bio p {
@@ -547,3 +548,95 @@ footer p {
     object-fit: cover;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 28px;
+}
+
+@media (max-width: 1646px) {
+    #about {
+        padding: 10rem 0 10rem;
+    }
+
+    #nav {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 1266px) {
+
+
+    .container {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1117px) {
+    header h1 {
+        font-size: 72px;
+    }
+
+    header .bio p {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .experiences p {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 993px) {
+    header h1 {
+        font-size: 58px;
+    }
+
+}
+
+@media (max-width: 898px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    header .container {
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .header-info .info {
+        position: absolute;
+        top: 0;
+    }
+}
