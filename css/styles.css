@@ -609,6 +609,11 @@ footer p {
         display: none;
     }
 
+    .circle {
+        margin-right: 5px;
+        margin-left: 10px
+    }
+
     .menu-toggle {
         display: flex;
     }
@@ -638,5 +643,281 @@ footer p {
     .header-info .info {
         position: absolute;
         top: 0;
+        right: 30px;
+    }
+
+    header h1 {
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding-bottom: 80px;
+    }
+
+    #about .container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .experiences {
+        width: 100%;
+    }
+
+    section#about {
+        padding: 80px 0;
+    }
+
+    .panel .work {
+        flex-direction: column;
+        position: relative;
+        padding: 20px 50px;
+        align-items: flex-start;
+    }
+
+    .panel .work img {
+        position: absolute;
+        top: -50px;
+        right: 20px;
+    }
+
+    .panel .work img.petmade-logo {
+        width: 200px;
+    }
+
+    .panel .work img.ib-logo {
+        width: 150px;
+        top: -30px;
+    }
+
+    .panel .work img.mklubas {
+        width: 150px;
+        top: -15px;
+        right: 0;
+    }
+
+    .panel .work h5 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .panel .subtitle {
+        font-size: 14px;
+    }
+
+    .panel .work img.mfestas {
+        width: 200px;
+        right: 0;
+        top: -25px;
+    }
+    
+    ul.arbatine {
+        max-width: 450px;
+    }
+
+    .panel .work img.arbatine-logo {
+        width: 250px;
+        top: -10px;
+        right: -30px;
+    }
+    
+    .panel .work img.media-logo {
+        width: 120px;
+        top: -20px;
+        right: 0;
+    }
+
+    .panel .work img.video-logo {
+        width: 150px;
+        top: -20px;
+        right: 0;
+    }
+
+    .panel .work img.illustration-logo {
+        width: 120px;
+        top: -30px;
+        right: 0;
+    }
+
+    .panel .work img.ebook-logo {
+        width: 100px;
+        top: -30px;
+        right: 0;
+    }
+
+}
+
+@media (max-width: 728px) {
+    .header-info .info {
+        position: static;
+    }
+
+    .header-info {
+        align-items: flex-start;
+    }
+
+    header .info {
+        padding-bottom: 50px;
+    }
+
+    header .info-card:not(:last-child) {
+        margin-bottom: 5px;
+    }
+
+    header h1 {
+        margin-bottom: 40px;
+    }
+    .panel .work img.arbatine-logo {
+        width: 150px;
+    }
+
+    h5.ads {
+        max-width: 300px;
+    }
+
+    h5.video-heading {
+        max-width: 300px;
+    }
+
+    h5.ebook {
+        max-width: 300px;
+    }
+
+    h5.moterys {
+        max-width: 300px;
+    }
+
+    ul.arbatine {
+        max-width: 400px;
+    }
+
+    header .bio {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 632px) {
+    .panel .work img {
+        position: static;
+        order: 1;
+    }
+
+    .panel .work div {
+        order: 2;
+    }
+}
+
+@media (max-width: 604px) {
+    .dsktp {
+        display: none;
+    }
+
+    .accordion {
+        font-size: 32px;
+    }
+
+    #about h2, #contact h2, #works h2 {
+        font-size: 58px;
+    }
+
+    #works h2 {
+        margin-top: 50px;
+    }
+
+    #works .subheading {
+        margin-bottom: 50px;
+    }
+
+    #works {
+        margin-bottom: 50px;
+    }
+
+    section#about {
+        padding: 40px 0;
+    }
+    header .bio {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 498px) {
+    #contact-form {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    textarea {
+        width: 100%;
+        max-width: none;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    header h1 {
+        font-size: 52px;
+    }
+}
+
+
+@media (max-width: 376px) {
+    header h1 {
+        font-size: 38px;
+    }
+
+    header .bio p {
+        font-size: 14px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    #about h2, #contact h2, #works h2 {
+        font-size: 38px;
+    }
+
+    #about .title {
+        font-size: 16px;
+    }
+
+    #about .title p {
+        margin-bottom: 15px;
+    }
+
+
+    .experiences p {
+        font-size: 14px;
+    }
+
+    #about .container  {
+        gap: 10px;
+    }
+
+    #nav {
+        padding: 1rem 0;
+    }
+
+    .skills .skill {
+        font-size: 12px;
+    }
+
+    #works h2 {
+        margin-top: 30px;
+    }
+
+    #contact h2 {
+        margin-top: 50px;
     }
 }
